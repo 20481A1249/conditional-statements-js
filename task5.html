@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calc</title>
+</head>
+<body>
+    <script>
+        let num1=+prompt("Enter the first value");
+        let num2=+prompt("Enter the second value"); 
+        let operator=prompt("Enter the opertor"); 
+        let result;
+
+        switch (operator) {
+            case "+":
+                result = num1 + num2;
+                break;
+            case "-":
+                result = num1 - num2;
+                break;
+            case "*":
+                result = num1 * num2;
+                break;
+            case "/":
+                result = num1 / num2;
+                break;
+            case "%":
+                result = num1 % num2;
+                break;
+            case "**":
+                result = num1 ** num2;
+                break;
+            default:
+                console.log("Invalid operator");
+                break;
+        }
+        console.log("Result:", result);
+
+    </script>
+</body>
+</html>
